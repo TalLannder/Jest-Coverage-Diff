@@ -96,7 +96,7 @@ async function run(): Promise<void> {
           deltaCommentIdentifier
         )
       }
-      messageToPost = `Current PR reduces the test coverage percentage by ${delta} for some tests`
+      messageToPost = `Current PR reduces the test coverage percentage by more than ${delta} for some tests`
       messageToPost = `${deltaCommentIdentifier}\nCommit SHA:${commitSha}\n${messageToPost}`
       await createOrUpdateComment(
         commentId,
